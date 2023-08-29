@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model _16_TranThanhHau_Buoi1.Models.KhoaModels
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h2>@Model.Messager</h2>
+        Thông tin khoa<br />
+        Tên khoa: @Model.TenKhoa<br />
+        Năm thành lập: @Model.NamThanhLap<br />
+    </div>
+</body>
+</html>

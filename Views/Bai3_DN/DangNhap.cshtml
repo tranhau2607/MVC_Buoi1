@@ -1,0 +1,109 @@
+﻿@{
+    ViewBag.Title = "DangNhap";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model _16_TranThanhHau_Buoi1.Models.KhoaModels
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DangNhap</title>
+    <style>
+        .thietke {
+            border: 2px solid blue;
+            width: 70%;
+            margin: auto;
+        }
+
+        .tieude {
+            background: blue;
+            color: white;
+            text-align: center;
+            padding: 40px 0px;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        .khung {
+            font-size:20px;
+            padding-top:20px;
+            background: LightGoldenrodYellow;
+        }
+
+        .DangNhap {
+            display: flex;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            padding: 10px;
+        }
+
+        .input_dien {
+            width: 90%;
+        }
+
+        .thongtin {
+            width: 30%;
+        }
+
+        .dien {
+            width: 70%;
+        }
+
+        .cuoi {
+            text-align: center;
+            padding: 5px 0px;
+        }
+        button{
+            border-radius:10px;
+            padding:5px;
+        }
+        button a{
+            color:black;
+            text-decoration:none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/Bai3_DN/DangNhap" method="post">
+        <div class="thietke">
+            <div class="tieude">
+                Thông tin đăng nhập
+            </div>
+            <div class="khung">
+                <div class="DangNhap">
+                    <ul class="thongtin">
+                        <li>Họ và tên</li>
+                        <li>Email</li>
+                        <li>Tên đăng nhập</li>
+                        <li>Password</li>
+                    </ul>
+                    <ul class="dien">
+                        <li><input type="text" class="input_dien" id="name" name="name" /></li>
+                        <li><input type="email" class="input_dien" id="email" name="email" /></li>
+                        <li><input type="text" class="input_dien" id="username" name="username" /></li>
+                        <li><input type="password" class="input_dien" id="password" name="password" /></li>
+                    </ul>
+
+                </div>
+                <div class="cuoi">
+                    <input type="checkbox" />Lưu thông tin
+                </div>
+                <div class="cuoi">
+                    <button>Đăng Nhập</button>
+                </div>
+                <div class="cuoi">
+                    <button><a href="/Bai3_DN/DangKy">Đăng Ký</a> </button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

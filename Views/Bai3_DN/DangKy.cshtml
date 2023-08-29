@@ -1,0 +1,104 @@
+﻿@{
+    ViewBag.Title = "DangKy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model _16_TranThanhHau_Buoi1.Models.KhoaModels
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DangKy</title>
+    <style>
+        .thietke {
+            border: 2px solid blue;
+            width: 70%;
+            margin: auto;
+        }
+
+        .tieude {
+            background: blue;
+            color: white;
+            text-align: center;
+            padding: 20px 0px;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        .khung {
+            font-size: 20px;
+            background: LightGoldenrodYellow;
+        }
+
+        .DangNhap {
+            display: flex;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            padding: 10px;
+        }
+
+        .input_dien {
+            width: 90%;
+        }
+
+        .thongtin {
+            width: 30%;
+        }
+
+        .dien {
+            width: 70%;
+        }
+
+        .cuoi {
+            
+            text-align: center;
+            padding: 5px 0px;
+        }
+
+        button {
+            border-radius: 10px;
+            padding:5px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/Bai3_DN/DangKy" method="post">
+        <div class="thietke">
+            <div class="tieude">
+                đăng ký tài khoản
+            </div>
+            <div class="khung">
+                <div class="DangNhap">
+                    <ul class="thongtin">
+                        <li>Full Name</li>
+                        <li>Email</li>
+                        <li>Phone Number</li>
+                        <li>User Name</li>
+                        <li>Password</li>
+                        <li>Retype Password</li>
+                    </ul>
+                    <ul class="dien">
+                        <li><input type="text" class="input_dien" id="name" name="name" /></li>
+                        <li><input type="email" class="input_dien" id="email" name="email" /></li>
+                        <li><input type="number" class="input_dien" id="number" name="number" /></li>
+                        <li><input type="text" class="input_dien" id="username" name="username" /></li>
+                        <li><input type="password" class="input_dien" id="password" name="password" /></li>
+                        <li><input type="password" class="input_dien" id="retypepassword" name="retypepassword" /></li>
+                    </ul>
+
+                </div>
+                <div class="cuoi">
+                    <button>Đăng Ký</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

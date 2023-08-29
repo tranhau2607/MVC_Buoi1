@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model _16_TranThanhHau_Buoi1.Models.User
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @{
+        var user = Session["user"] as _16_TranThanhHau_Buoi1.Models.User;
+    }
+    <h2>Welcome @user.UserName</h2>
+    <a href="/Bai3_DN/DangNhap">Dang xuat</a>
+</body>
+</html>
+
